@@ -13,5 +13,8 @@ def clickMe():
     action.configure(text='** I have been clicked! **')
     alabel.configure(foreground='red')
     alabel.configure(text='A Red Label')
-    
+
+action = ttk.Button(win, text='Click Me!', command=clickMe)
+action.grid(column=1, row=0)
+
 win.mainloop()
