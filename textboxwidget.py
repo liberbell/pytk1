@@ -10,11 +10,13 @@ alabel = ttk.Label(win, text='A label')
 alabel.grid(column=0, row=0)
 
 def clickMe():
-    action.configure(text='** I have been clicked! **')
-    alabel.configure(foreground='red')
-    alabel.configure(text='A Red Label')
+    action.configure(text='Hello ' + name.get())
+
+name = tk.StringVar()
+nameEntered = ttk.Entry(win, width=12, textvariable=name)
+nameEntered.grid(column=0, row=1)
 
 action = ttk.Button(win, text='Click Me!', command=clickMe)
-action.grid(column=1, row=0)
+action.grid(column=1, row=1)
 
 win.mainloop()
