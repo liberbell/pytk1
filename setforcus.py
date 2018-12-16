@@ -20,7 +20,8 @@ nameEntered.grid(column=0, row=1)
 
 action = ttk.Button(win, text='Click Me!', command=clickMe)
 action.grid(column=1, row=1)
-nameEntered.focus()
+action.configure(state='disabled')
+# nameEntered.focus()
 
 
 win.mainloop()
