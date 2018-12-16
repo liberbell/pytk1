@@ -25,6 +25,9 @@ action.grid(column=1, row=1)
 
 ttk.Label(win, text='choose a number:').grid(column=1, row=0)
 number = tk.StringVar()
-number.Chosen = ttk.Combobox(win, width=12, textvariable=number)
+numberChosen = ttk.Combobox(win, width=12, textvariable=number)
+numberChosen['values'] = (1, 2, 4, 42, 100)
+numberChosen.grid(column=1, row=1)
+numberChosen.current(0)
 
 win.mainloop()
