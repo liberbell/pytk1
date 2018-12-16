@@ -20,8 +20,11 @@ nameEntered.grid(column=0, row=1)
 
 action = ttk.Button(win, text='Click Me!', command=clickMe)
 action.grid(column=1, row=1)
-action.configure(state='disabled')
+# action.configure(state='disabled')
 # nameEntered.focus()
 
+ttk.Label(win, text='choose a number:').grid(column=1, row=0)
+number = tk.StringVar()
+number.Chosen = ttk.Combobox(win, width=12, textvariable=number)
 
 win.mainloop()
