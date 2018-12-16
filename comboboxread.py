@@ -10,7 +10,7 @@ alabel = ttk.Label(win, text='A label')
 alabel.grid(column=0, row=0)
 
 def clickMe():
-    action.configure(text='Hello ' + name.get())
+    action.configure(text='Hello ' + name.get() + ' ' + numberChosen.get())
 
 ttk.Label(win, text='Enter a name:').grid(column=0, row=0)
 
@@ -26,7 +26,7 @@ action.grid(column=2, row=1)
 
 ttk.Label(win, text='choose a number:').grid(column=1, row=0)
 number = tk.StringVar()
-numberChosen = ttk.Combobox(win, width=12, textvariable=number)
+numberChosen = ttk.Combobox(win, width=12, textvariable=number, state='readonly')
 numberChosen['values'] = (1, 2, 4, 42, 100)
 numberChosen.grid(column=1, row=1)
 numberChosen.current(0)
