@@ -20,7 +20,7 @@ nameEntered.grid(column=0, row=1)
 
 action = ttk.Button(win, text='Click Me!', command=clickMe)
 action.grid(column=1, row=1)
-name.nameEntered.forcus()
+nameEntered.forcus()
 
 
 win.mainloop()
