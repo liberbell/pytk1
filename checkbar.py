@@ -57,7 +57,7 @@ check2.select()
 check2.grid(column=1, row=4, sticky=tk.W)
 
 chVarEn = tk.IntVar()
-check3 = tk.Checkbutton(win, text='enabled', variable=)
+check3 = tk.Checkbutton(win, text='enabled', variable=chVarEn)
 check3.select()
 check3.grid(column=2, row=4, sticky=tk.W)
 
