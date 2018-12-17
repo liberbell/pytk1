@@ -10,7 +10,7 @@ alabel = ttk.Label(win, text='A label')
 alabel.grid(column=0, row=0)
 
 def clickMe():
-    action.configure(text='Hello ' + name.get() + ' ' + numberChosen.get())
+    action.configure(text='Hello ' + name.get() + ' ' + number.get())
 
 ttk.Label(win, text='Enter a name:').grid(column=0, row=0)
 
