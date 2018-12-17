@@ -49,7 +49,16 @@ numberChosen.current(0)
 chVarDis = tk.IntVar()
 check1 = tk.Checkbutton(win, text='Disabled', variable=chVarUn)
 check1.select()
-check1.grid(column=1, row=4, sticky=tk.W)
+check1.grid(column=0, row=4, sticky=tk.W)
+
+chVarUn = tk.IntVar()
+check2 = tk.Checkbutton(win, text='Unchecked', variable=chVarEn)
+check2.select()
+check2.grid(column=1, row=4, sticky=tk.W)
+
+chVarEn = tk.IntVar()
+check3 = tk.Checkbutton(win, text='')
+
 
 nameEntered.focus()      # Place cursor into name Entry
 #======================
