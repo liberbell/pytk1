@@ -52,7 +52,7 @@ check1.select()
 check1.grid(column=0, row=4, sticky=tk.W)
 
 chVarUn = tk.IntVar()
-check2 = tk.Checkbutton(win, text='Unchecked', variable=chVarEn)
+check2 = tk.Checkbutton(win, text='Unchecked', variable=chVarUn)
 check2.select()
 check2.grid(column=1, row=4, sticky=tk.W)
 
