@@ -68,6 +68,14 @@ check3.grid(column=2, row=4, sticky=tk.W)
 #         win.configure(background=COLOR3)
 colors = ['Blue', 'Godl', 'Red']
 
+def radCall()]:
+    if radSel == 0:
+        win.configure(background=colors[0])
+    elif radsel == 1:
+        win.configure(background=colors[1])
+    elif radsel == 2:
+        win.configure(background=colors[2])
+
 radVar = tk.IntVar()
 
 rad1 = tk.Radiobutton(win, text=COLOR1, variable=radVar, value=1, command=radCall)
