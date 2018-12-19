@@ -93,10 +93,10 @@ for col in range(3):
 # rad3 = tk.Radiobutton(win, text=COLOR3, variable=radVar, value=3, command=radCall)
 # rad3.grid(column=2, row=5, sticky=tk.W, columnspan=3)
 #
-# scrolW = 30
-# scrolH = 3
-# scr = scrolledtext.ScrolledText(win, width=scrolW, height=scrolH, wrap=tk.WORD)
-# scr.grid(column=0, columnspan=3)
+scrolW = 30
+scrolH = 3
+scr = scrolledtext.ScrolledText(win, width=scrolW, height=scrolH, wrap=tk.WORD)
+scr.grid(column=0, columnspan=3)
 
 
 nameEntered.focus()      # Place cursor into name Entry
