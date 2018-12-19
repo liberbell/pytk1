@@ -79,4 +79,10 @@ rad2 = tk.Radiobotton(win, text=COLOR2, variable=radVar, value=2, command=radCal
 rad2.grid(column=1, row=5, sticky=tk.W, columnspan=3)
 
 rad3 = tk.Radiobotton(win, text=COLOR3, variable=radVar, value=2, command=radCall)
-rad3.grid(column=2, row=5, sticky=tk.W, columnspan=3)
+rad3.grid(column=2d, row=5, sticky=tk.W, columnspan=3)
+
+nameEntered.focus()      # Place cursor into name Entry
+#======================
+# Start GUI
+#======================
+win.mainloop()
