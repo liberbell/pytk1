@@ -66,14 +66,15 @@ check3.grid(column=2, row=4, sticky=tk.W)
 #         win.configure(background=COLOR2)
 #     elif radSel == 3:
 #         win.configure(background=COLOR3)
-colors = ['Blue', 'Godl', 'Red']
+colors = ['Blue', 'Gold', 'Red']
 
 def radCall():
+    radSel = radVar.get()
     if radSel == 0:
         win.configure(background=colors[0])
-    elif radsel == 1:
+    elif radSel == 1:
         win.configure(background=colors[1])
-    elif radsel == 2:
+    elif radSel == 2:
         win.configure(background=colors[2])
 
 radVar = tk.IntVar()
