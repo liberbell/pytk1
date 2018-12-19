@@ -68,7 +68,7 @@ check3.grid(column=2, row=4, sticky=tk.W)
 #         win.configure(background=COLOR3)
 colors = ['Blue', 'Godl', 'Red']
 
-def radCall()]:
+def radCall():
     if radSel == 0:
         win.configure(background=colors[0])
     elif radsel == 1:
