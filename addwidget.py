@@ -84,19 +84,19 @@ for col in range(3):
     curRed = tk.Radiobutton(win, text=colors[col], variable=radVar, value=col, command=radCall)
     curRed.grie(column=col, row=6, sticky=tk.W)
 
-rad1 = tk.Radiobutton(win, text=COLOR1, variable=radVar, value=1, command=radCall)
-rad1.grid(column=0, row=5, sticky=tk.W, columnspan=3)
-
-rad2 = tk.Radiobutton(win, text=COLOR2, variable=radVar, value=2, command=radCall)
-rad2.grid(column=1, row=5, sticky=tk.W, columnspan=3)
-
-rad3 = tk.Radiobutton(win, text=COLOR3, variable=radVar, value=3, command=radCall)
-rad3.grid(column=2, row=5, sticky=tk.W, columnspan=3)
-
-scrolW = 30
-scrolH = 3
-scr = scrolledtext.ScrolledText(win, width=scrolW, height=scrolH, wrap=tk.WORD)
-scr.grid(column=0, columnspan=3)
+# rad1 = tk.Radiobutton(win, text=COLOR1, variable=radVar, value=1, command=radCall)
+# rad1.grid(column=0, row=5, sticky=tk.W, columnspan=3)
+#
+# rad2 = tk.Radiobutton(win, text=COLOR2, variable=radVar, value=2, command=radCall)
+# rad2.grid(column=1, row=5, sticky=tk.W, columnspan=3)
+#
+# rad3 = tk.Radiobutton(win, text=COLOR3, variable=radVar, value=3, command=radCall)
+# rad3.grid(column=2, row=5, sticky=tk.W, columnspan=3)
+#
+# scrolW = 30
+# scrolH = 3
+# scr = scrolledtext.ScrolledText(win, width=scrolW, height=scrolH, wrap=tk.WORD)
+# scr.grid(column=0, columnspan=3)
 
 
 nameEntered.focus()      # Place cursor into name Entry
