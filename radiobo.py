@@ -2,9 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import scrolledtext
 
-mport tkinter as tk
-from tkinter import ttk
-
 # Create instance
 win = tk.Tk()
 
