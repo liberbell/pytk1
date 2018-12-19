@@ -54,19 +54,19 @@ check3 = tk.Checkbutton(win, text='Enabled', variable=chVarEn)
 check3.select()
 check3.grid(column=2, row=4, sticky=tk.W)
 
-
-COLOR1 = 'Blue'
-COLOR2 = 'Gold'
-COLOR3 = 'Red'
-
-def radCall():
-    radSel = radVar.get()
-    if radSel == 1:
-        win.configure(background=COLOR1)
-    elif radSel == 2:
-        win.configure(background=COLOR2)
-    elif radSel == 3:
-        win.configure(background=COLOR3)
+# COLOR1 = 'Blue'
+# COLOR2 = 'Gold'
+# COLOR3 = 'Red'
+#
+# def radCall():
+#     radSel = radVar.get()
+#     if radSel == 1:
+#         win.configure(background=COLOR1)
+#     elif radSel == 2:
+#         win.configure(background=COLOR2)
+#     elif radSel == 3:
+#         win.configure(background=COLOR3)
+colors = ['Blue', 'Godl', 'Red']
 
 radVar = tk.IntVar()
 
