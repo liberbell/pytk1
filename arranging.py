@@ -101,9 +101,9 @@ for col in range(3):
 labelIsFrame = ttk.LabelFrame(win, text=' Labels in a Flame ')
 labelIsFrame.grid(column=0, row=7)
 
-ttk.Label(labelIsFrame, text='Label1').grid(column=0, row=0, sticky=tk.W)
-ttk.Label(labelIsFrame, text='Label2').grid(column=1, row=0, sticky=tk.W)
-ttk.Label(labelIsFrame, text='Label3').grid(column=2, row=0, sticky=tk.W)
+ttk.Label(labelIsFrame, text='Label1').grid(column=0, row=0)
+ttk.Label(labelIsFrame, text='Label2').grid(column=1, row=0)
+ttk.Label(labelIsFrame, text='Label3').grid(column=2, row=0)
 
 nameEntered.focus()      # Place cursor into name Entry
 #======================
