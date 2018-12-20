@@ -83,7 +83,7 @@ radVar.set(99)
 for col in range(3):
     curRed = 'rad' + str(col)
     curRed = tk.Radiobutton(win, text=colors[col], variable=radVar, value=col, command=radCall)
-    curRed.grid(column=col, row=6, sticky=tk.W)
+    curRed.grid(column=col, row=6, sticky=tk.W, columnspan=3)
 
 # rad1 = tk.Radiobutton(win, text=COLOR1, variable=radVar, value=1, command=radCall)
 # rad1.grid(column=0, row=5, sticky=tk.W, columnspan=3)
