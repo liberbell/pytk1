@@ -99,7 +99,7 @@ for col in range(3):
 # scr = scrolledtext.ScrolledText(win, width=scrolW, height=scrolH, wrap=tk.WORD)
 # scr.grid(column=0, columnspan=3)
 labelIsFrame = ttk.LabelFrame(win, text=' Labels in a Flame ')
-labelIsFrame.grid(column=0, row=7, padx=20, pady=40)
+labelIsFrame.grid(column=0, row=7, padx=10, pady=10)
 
 ttk.Label(labelIsFrame, text='Label1').grid(column=0, row=0)
 ttk.Label(labelIsFrame, text='Label2').grid(column=0, row=1)
