@@ -105,6 +105,9 @@ ttk.Label(labelIsFrame, text='Label1').grid(column=0, row=0)
 ttk.Label(labelIsFrame, text='Label2').grid(column=0, row=1)
 ttk.Label(labelIsFrame, text='Label3').grid(column=0, row=2)
 
+for child in labelIsFrame.winfo_children():
+    child.grid_configure(padx=8, pady=4)
+
 nameEntered.focus()      # Place cursor into name Entry
 #======================
 # Start GUI
