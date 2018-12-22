@@ -101,7 +101,7 @@ for col in range(3):
 labelIsFrame = ttk.LabelFrame(win, text=' Labels in a Flame ')
 labelIsFrame.grid(column=0, row=7, padx=10, pady=10)
 
-ttk.Label(labelIsFrame, text='Label1  -- sooo much looooong').grid(column=0, row=0)
+ttk.Label(labelIsFrame, text='Label1').grid(column=0, row=0)
 ttk.Label(labelIsFrame, text='Label2').grid(column=0, row=1)
 ttk.Label(labelIsFrame, text='Label3').grid(column=0, row=2)
 
