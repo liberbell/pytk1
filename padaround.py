@@ -72,8 +72,6 @@ scr = scrolledtext.ScrolledText(win, width=scrolW, height=scrolH, wrap=tk.WORD)
 # scr.grid(column=0, columnspan=3)
 scr.grid(column=0, columnspan=3)
 
-
-
 colors = ['Blue', 'Gold', 'Red']
 
 def radCall():
