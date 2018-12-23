@@ -27,7 +27,7 @@ ttk.Label(win, text="Enter a name:").grid(column=0, row=0)
 
 # Adding a Textbox Entry widget
 name = tk.StringVar()
-nameEntered = ttk.Entry(win, width=12, textvariable=name)
+nameEntered = ttk.Entry(monty, width=12, textvariable=name)
 nameEntered.grid(column=0, row=1)
 
 # Adding a Button
