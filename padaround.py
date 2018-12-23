@@ -12,6 +12,9 @@ win.title("Python GUI")
 #win.resizable(0,0)
 
 # Modify adding a Label
+monty = ttk.LabelFrame(win, text='Monty python')
+monty.grid(column=0, row=0)
+
 aLabel = ttk.Label(win, text="A Label")
 aLabel.grid(column=0, row=0)
 
