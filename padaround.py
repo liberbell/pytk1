@@ -15,7 +15,7 @@ win.title("Python GUI")
 monty = ttk.LabelFrame(win, text='Monty python')
 monty.grid(column=0, row=0)
 
-aLabel = ttk.Label(win, text="A Label")
+aLabel = ttk.Label(monty, text="A Label")
 aLabel.grid(column=0, row=0)
 
 # Modified Button Click Function
@@ -31,29 +31,29 @@ nameEntered = ttk.Entry(win, width=12, textvariable=name)
 nameEntered.grid(column=0, row=1)
 
 # Adding a Button
-action = ttk.Button(win, text="Click Me!", command=clickMe)
+action = ttk.Button(monty, text="Click Me!", command=clickMe)
 action.grid(column=2, row=1)
 #action.configure(state='disabled')    # Disable the Button Widget
 
-ttk.Label(win, text="Choose a number:").grid(column=1, row=0)
+ttk.Label(monty, text="Choose a number:").grid(column=1, row=0)
 number = tk.StringVar()
-numberChosen = ttk.Combobox(win, width=12, textvariable=number, state='readonly')
+numberChosen = ttk.Combobox(monty, width=12, textvariable=number, state='readonly')
 numberChosen['values'] = (1, 2, 4, 42, 100)
 numberChosen.grid(column=1, row=1)
 numberChosen.current(0)
 
 chVarDis = tk.IntVar()
-check1 = tk.Checkbutton(win, text='Disabled', variable=chVarDis, state='disabled')
+check1 = tk.Checkbutton(monty, text='Disabled', variable=chVarDis, state='disabled')
 check1.select()
 check1.grid(column=0, row=4, sticky=tk.W)
 
 chVarUn = tk.IntVar()
-check2 = tk.Checkbutton(win, text='Unchecked', variable=chVarUn)
+check2 = tk.Checkbutton(monty, text='Unchecked', variable=chVarUn)
 check2.select()
 check2.grid(column=1, row=4, sticky=tk.W)
 
 chVarEn = tk.IntVar()
-check3 = tk.Checkbutton(win, text='Enabled', variable=chVarEn)
+check3 = tk.Checkbutton(monty, text='Enabled', variable=chVarEn)
 check3.select()
 check3.grid(column=2, row=4, sticky=tk.W)
 
