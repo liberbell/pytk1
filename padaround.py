@@ -104,7 +104,7 @@ for col in range(3):
 # rad3.grid(column=2, row=5, sticky=tk.W, columnspan=3)
 #
 labelIsFrame = ttk.LabelFrame(monty, text=' Labels in a Frame')
-labelIsFrame.grid(column=1, row=7, padx=10, pady=10)
+labelIsFrame.grid(column=0, row=7, padx=10, pady=10)
 
 ttk.Label(labelIsFrame, text='Label1').grid(column=0, row=0)
 ttk.Label(labelIsFrame, text='Label2').grid(column=0, row=1)
