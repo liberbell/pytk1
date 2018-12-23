@@ -15,7 +15,7 @@ win.title("Python GUI")
 monty = ttk.LabelFrame(win, text='Monty python')
 monty.grid(column=0, row=0)
 
-aLabel = ttk.Label(monty, text="A Label")
+aLabel = ttk.Label(monty, text=" ")
 aLabel.grid(column=0, row=0)
 
 # Modified Button Click Function
@@ -23,7 +23,7 @@ def clickMe():
     action.configure(text='Hello ' + name.get() + ' '+ numberChosen.get())
 
 # Changing our Label
-ttk.Label(monty, text="Enter a name:").grid(column=0, row=0)
+ttk.Label(monty, text="Enter a name:").grid(column=0, row=0, sticky='W')
 
 # Adding a Textbox Entry widget
 name = tk.StringVar()
