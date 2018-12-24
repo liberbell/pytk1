@@ -111,6 +111,7 @@ win.config(menu=menuBar)
 # Add menu items
 fileMenu = Menu(menuBar, tearoff=0)
 fileMenu.add_command(label="New")
+fileMenu.add_command(label='Exit')
 menuBar.add_cascade(label="File", menu=fileMenu)
 
 # Place cursor into name Entry
