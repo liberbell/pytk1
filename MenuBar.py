@@ -109,8 +109,8 @@ menuBar = Menu(win)
 win.config(menu=menuBar)
 
 # Add menu items
-# fileMenu = Menu(menuBar, tearoff=0)
-fileMenu = Menu(menuBar)
+fileMenu = Menu(menuBar, tearoff=0)
+# fileMenu = Menu(menuBar)
 fileMenu.add_command(label="New")
 fileMenu.add_separator()
 fileMenu.add_command(label='Exit')
