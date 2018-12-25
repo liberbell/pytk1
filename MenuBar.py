@@ -103,6 +103,10 @@ ttk.Label(labelsFrame, text="Label3").grid(column=0, row=2)
 for child in labelsFrame.winfo_children():
     child.grid_configure(padx=8, pady=1)
 
+def quit():
+    win.quit()
+    win.destroy()
+    exit()
 
 # Creating a Menu Bar
 menuBar = Menu(win)
