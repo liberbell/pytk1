@@ -117,7 +117,7 @@ fileMenu = Menu(menuBar, tearoff=0)
 # fileMenu = Menu(menuBar)
 fileMenu.add_command(label="New")
 fileMenu.add_separator()
-fileMenu.add_command(label='Exit')
+fileMenu.add_command(label='Exit', command=_quit)
 menuBar.add_cascade(label="File", menu=fileMenu)
 
 helpMenu = Menu(menuBar, tearoff=0)
