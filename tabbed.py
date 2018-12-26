@@ -9,3 +9,5 @@ tabControl = ttk.Notebook(win)
 tab1 = ttk.Frame(tabControl)
 tabControl.add(tab1, text='Tab 1')
 tabControl.pack(expand=1, file='both')
+
+win.mainloop()
