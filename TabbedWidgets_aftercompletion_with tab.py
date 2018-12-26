@@ -50,19 +50,19 @@ monty.grid(column=0, row=0, padx=8, pady=4)
 
 # Creating three checkbuttons
 chVarDis = tk.IntVar()
-check1 = tk.Checkbutton(monty, text="Disabled", variable=chVarDis, state='disabled')
+check1 = tk.Checkbutton(monty2, text="Disabled", variable=chVarDis, state='disabled')
 check1.select()
-check1.grid(column=0, row=4, sticky=tk.W, columnspan=3)
+check1.grid(column=0, row=0, sticky=tk.W)
 
 chVarUn = tk.IntVar()
-check2 = tk.Checkbutton(monty, text="UnChecked", variable=chVarUn)
+check2 = tk.Checkbutton(monty2, text="UnChecked", variable=chVarUn)
 check2.deselect()
-check2.grid(column=1, row=4, sticky=tk.W, columnspan=3)
+check2.grid(column=1, row=0, sticky=tk.W)
 
 chVarEn = tk.IntVar()
-check3 = tk.Checkbutton(monty, text="Toggle", variable=chVarEn)
+check3 = tk.Checkbutton(monty2, text="Toggle", variable=chVarEn)
 check3.deselect()
-check3.grid(column=2, row=4, sticky=tk.W, columnspan=3)
+check3.grid(column=2, row=0, sticky=tk.W)
 
 # GUI Callback function
 def checkCallback(*ignoredArgs):
