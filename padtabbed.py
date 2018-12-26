@@ -12,7 +12,7 @@ win.title("Python GUI")
 #win.resizable(0,0)
 
 # Modify adding a Label
-abControl = ttk.Notebook(win)
+tabControl = ttk.Notebook(win)
 
 tab1 = ttk.Frame(tabControl)
 tabControl.add(tab1, text='Tab 1')
@@ -22,11 +22,11 @@ tabControl.add(tab2, text='Tab 2')
 
 tabControl.pack(expand=1, fill='both')
 
-monty = ttk.LabelFrame(tab1, text=' Monty Python ')
-monty.grid(column=0, row=0, padx=8, pady=4)
-ttk.Label(monty, text='Enter a name:').grid(column=0, row=0, sticky='W')
+# monty = ttk.LabelFrame(tab1, text=' Monty Python ')
+# monty.grid(column=0, row=0, padx=8, pady=4)
+# ttk.Label(monty, text='Enter a name:').grid(column=0, row=0, sticky='W')
 
-monty = ttk.LabelFrame(win, text='Monty python')
+monty = ttk.LabelFrame(tab1, text='Monty python')
 monty.grid(column=0, row=0)
 
 aLabel = ttk.Label(monty, text=" ")
