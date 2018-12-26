@@ -87,9 +87,9 @@ colors = ["Blue", "Gold", "Red"]
 # Radiobutton callback function
 def radCall():
     radSel=radVar.get()
-    if   radSel == 0: win.configure(text='Blue')
-    elif radSel == 1: win.configure(text='Gold')
-    elif radSel == 2: win.configure(text='Red')
+    if   radSel == 0: monty2.configure(text='Blue')
+    elif radSel == 1: monty2.configure(text='Gold')
+    elif radSel == 2: monty2.configure(text='Red')
 
 radVar = tk.IntVar()
 
