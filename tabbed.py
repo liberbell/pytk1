@@ -14,4 +14,7 @@ tabControl.add(tab2, text='Tab 2')
 
 tabControl.pack(expand=1, fill='both')
 
+monty = ttk.LabelFrame(tab1, text=' Monty Python ')
+monty.grid(column=0, row=0, padx=8, pady=4)
+
 win.mainloop()
