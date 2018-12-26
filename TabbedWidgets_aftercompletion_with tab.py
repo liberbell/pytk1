@@ -46,7 +46,7 @@ numberChosen.grid(column=1, row=1)
 numberChosen.current(0)
 
 monty2 = ttk.LabelFrame(tab2, text=' The Snake ')
-monty.grid(column=0, row=0, padx=8, pady=4)
+monty2.grid(column=0, row=0, padx=8, pady=4)
 
 # Creating three checkbuttons
 chVarDis = tk.IntVar()
@@ -99,11 +99,11 @@ radVar.set(99)
 # Creating all three Radiobutton widgets within one loop
 for col in range(3):
     curRad = 'rad' + str(col)
-    curRad = tk.Radiobutton(monty, text=colors[col], variable=radVar, value=col, command=radCall)
+    curRad = tk.Radiobutton(monty2, text=colors[col], variable=radVar, value=col, command=radCall)
     curRad.grid(column=col, row=5, sticky=tk.W, columnspan=3)       # <== MISTAKE
 
 # Create a container to hold labels
-labelsFrame = ttk.LabelFrame(monty, text=' Labels in a Frame ')
+labelsFrame = ttk.LabelFrame(monty2, text=' Labels in a Frame ')
 labelsFrame.grid(column=0, row=7)
 
 # Place labels into the container element - vertically
