@@ -46,6 +46,7 @@ numberChosen.grid(column=1, row=1)
 numberChosen.current(0)
 
 monty2 = ttk.LabelFrame(tab2, text=' The Snake ')
+monty.grid(column=0, row=0, padx=8, pady=4)
 
 # Creating three checkbuttons
 chVarDis = tk.IntVar()
