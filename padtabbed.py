@@ -28,7 +28,7 @@ tabControl.pack(expand=1, fill='both')
 # ttk.Label(monty, text='Enter a name:').grid(column=0, row=0, sticky='W')
 
 monty = ttk.LabelFrame(tab1, text='Monty python')
-monty.grid(column=0, row=0)
+monty.grid(column=0, row=0, padx=8, pady=4)
 
 aLabel = ttk.Label(monty, text=" ")
 aLabel.grid(column=0, row=0)
