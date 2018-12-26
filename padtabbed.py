@@ -30,8 +30,8 @@ tabControl.pack(expand=1, fill='both')
 monty = ttk.LabelFrame(tab1, text='Monty python')
 monty.grid(column=0, row=0, padx=8, pady=4)
 
-aLabel = ttk.Label(monty, text=" ")
-aLabel.grid(column=0, row=0)
+# aLabel = ttk.Label(monty, text=" ")
+# aLabel.grid(column=0, row=0)
 
 # Modified Button Click Function
 def clickMe():
@@ -43,7 +43,7 @@ ttk.Label(monty, text="Enter a name:").grid(column=0, row=0, sticky='W')
 # Adding a Textbox Entry widget
 name = tk.StringVar()
 nameEntered = ttk.Entry(monty, width=12, textvariable=name)
-nameEntered.grid(column=0, row=1, sticky=tk.W)
+nameEntered.grid(column=0, row=1, sticky='W')
 
 # Adding a Button
 action = ttk.Button(monty, text="Click Me!", command=clickMe)
