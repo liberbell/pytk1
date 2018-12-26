@@ -87,9 +87,9 @@ colors = ["Blue", "Gold", "Red"]
 # Radiobutton callback function
 def radCall():
     radSel=radVar.get()
-    if   radSel == 0: win.configure(background=colors[0])
-    elif radSel == 1: win.configure(background=colors[1])
-    elif radSel == 2: win.configure(background=colors[2])
+    if   radSel == 0: win.configure(text='Blue')
+    elif radSel == 1: win.configure(text='Gold')
+    elif radSel == 2: win.configure(text='Red')
 
 radVar = tk.IntVar()
 
