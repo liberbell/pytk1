@@ -52,7 +52,7 @@ action.grid(column=2, row=1)
 
 ttk.Label(win, text="Choose a number:").grid(column=1, row=0)
 number = tk.StringVar()
-numberChosen = ttk.Combobox(monty, width=12, textvariable=number, state='readonly')
+numberChosen = ttk.Combobox(monty, width=12, textvariable=number)
 numberChosen['values'] = (1, 2, 4, 42, 100)
 numberChosen.grid(column=1, row=1)
 numberChosen.current(0)
