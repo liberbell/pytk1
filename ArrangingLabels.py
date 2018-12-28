@@ -96,7 +96,7 @@ radVar.set(99)
 for col in range(3):
     curRad = 'rad' + str(col)
     curRad = tk.Radiobutton(win, text=colors[col], variable=radVar, value=col, command=radCall)
-    curRad.grid(column=col, row=5, sticky=tk.W, columnspan=3)
+    curRad.grid(column=col, row=6, sticky=tk.W, columnspan=3)
 
 
 # Create a container to hold labels
