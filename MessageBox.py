@@ -4,24 +4,18 @@ from tkinter import scrolledtext
 from tkinter import Menu
 from tkinter import messagebox as mBox
 
-# Create instance
 win = tk.Tk()
 
-# Add a title
 win.title("Python GUI")
 
-# We are creating a container frame to hold all other widgets
 monty = ttk.LabelFrame(win, text=' Monty Python ')
 monty.grid(column=0, row=0, padx=8, pady=4)
 
-#Modified Button Click Function
 def clickMe():
     action.configure(text='Hello ' + name.get())
 
-# Changing our Label
 ttk.Label(monty, text="Enter a name:").grid(column=0, row=0, sticky='W')
 
-# Adding a Textbox Entry widget
 name = tk.StringVar()
 nameEntered = ttk.Entry(monty, width=12, textvariable=name)
 nameEntered.grid(column=0, row=1, sticky='W')
