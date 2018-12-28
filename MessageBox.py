@@ -119,7 +119,8 @@ menuBar.add_cascade(label="File", menu=fileMenu)
 # Display a Message Box
 def _msgBox():
     # mBox.showinfo('Python Message Info Box', 'A Python GUI created using tkinter:\nThe year is 2018.')
-    mBox.showwarning('Python Message Info Box', 'A Python GUI created using tkinter:\nThe year is 2018.')
+    # mBox.showwarning('Python Message Info Box', 'A Python GUI created using tkinter:\nThe year is 2018.')
+    mBox.showerror('Python Error Message Box', 'A Python created using tkinter:\nError:')
 
 # Add another Menu to the Menu Bar and an item
 helpMenu = Menu(menuBar, tearoff=0)
