@@ -9,7 +9,6 @@ win = tk.Tk()
 # Add a title
 win.title("Python GUI")
 
-# Tab Control introduced here -----------------------------------------
 tabControl = ttk.Notebook(win)          # Create Tab Control
 
 tab1 = ttk.Frame(tabControl)            # Create a tab
