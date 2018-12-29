@@ -55,7 +55,7 @@ def _spin():
     scr.insert(tk.INSERT, value + '\n')
 
 # Adding a Spinbox widget
-spin = Spinbox(monty, from_=0, to=10, width=5)
+spin = Spinbox(monty, from_=0, to=10, width=5, bd=10)
 spin.grid(column=0, row=2)
 
 # Using a scrolled Text control
