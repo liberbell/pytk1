@@ -35,7 +35,6 @@ class ToolTip(object):
         if tw:
             tw.destroy()
 
-#===================================================================
 def createToolTip( widget, text):
     toolTip = ToolTip(widget)
     def enter(event):
