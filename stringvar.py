@@ -9,3 +9,7 @@ strData.set('Hello StringVar')
 varData = strData.get()
 
 print(varData)
+
+print(tk.IntVar())
+print(tk.DoubleVar())
+print(tk.BooleanVar())
