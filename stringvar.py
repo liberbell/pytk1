@@ -8,7 +8,9 @@ strData.set('Hello StringVar')
 
 varData = strData.get()
 
+intData = tk.IntVar()
 print(varData)
+print(intData)
 
 print(tk.IntVar())
 print(tk.DoubleVar())
