@@ -111,6 +111,8 @@ scrolW  = 30; scrolH  =  3
 scr = scrolledtext.ScrolledText(monty, width=scrolW, height=scrolH, wrap=tk.WORD)
 scr.grid(column=0, row=3, sticky='WE', columnspan=3)
 
+createToolTip(scr, 'This is a Scroll control.')
+
 # Tab Control 2 refactoring  -----------------------------------------
 # We are creating a container tab3 to hold all other widgets -- Tab2
 monty2 = ttk.LabelFrame(tab2, text=' The Snake ')
