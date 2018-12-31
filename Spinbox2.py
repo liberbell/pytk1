@@ -157,6 +157,9 @@ menuBar.add_cascade(label="Help", menu=helpMenu)
 
 # Change the main windows icon
 #win.iconbitmap(r'C:\Python34\DLLs\pyc.ico')
+strData = spin.get()
+print('Spinbox value: ' + strData)
+
 
 # Place cursor into name Entry
 nameEntered.focus()
