@@ -55,7 +55,8 @@ def _spin():
     scr.insert(tk.INSERT, value + '\n')
 
 # Adding a Spinbox widget
-spin = Spinbox(monty, values=(1,2,4,42), width=5, bd=10, command=_spin)
+spin = Spinbox(monty, width=5, bd=10, command=_spin)
+spin['values'] = (1, 2, 4, 42, 100)
 spin.grid(column=0, row=2)
 
 # spin = Spinbox(monty, values=(0, 50, 100), width=5, bd=10, command=_spin, relief=tk.RIDGE)
