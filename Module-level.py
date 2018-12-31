@@ -221,7 +221,7 @@ class OOP():
     # print(GLOBAL_CONST)
 #
     def usingGlobal():
-        # GLOBAL_CONST = 777
+        GLOBAL_CONST = 777
         print(GLOBAL_CONST)
 
 #     # call method
