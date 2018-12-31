@@ -58,8 +58,8 @@ def _spin():
 spin = Spinbox(monty, values=(1,2,4,42), width=5, bd=10, command=_spin)
 spin.grid(column=0, row=2)
 
-spin = Spinbox(monty, values=(0, 50, 100), width=5, bd=10, command=_spin, relief=tk.RIDGE)
-spin.grid(column=1, row=2)
+# spin = Spinbox(monty, values=(0, 50, 100), width=5, bd=10, command=_spin, relief=tk.RIDGE)
+# spin.grid(column=1, row=2)
 
 # Using a scrolled Text control
 scrolW  = 30; scrolH  =  3
