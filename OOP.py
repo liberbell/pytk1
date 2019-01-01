@@ -5,6 +5,8 @@ from tkinter import Menu
 from tkinter import Spinbox
 import OOP_ToolTip as tt
 
+from threading import Thread
+
 GLOBAL_CONST = 42
 
 #===================================================================
@@ -49,6 +51,9 @@ class OOP():
         self.win.quit()
         self.win.destroy()
         exit()
+
+    def methodInAThread(self):
+        print('Hi, How are you.')
 
     def usingGlobal(self):
         GLOBAL_CONST = 777
@@ -212,4 +217,5 @@ class OOP():
 # Start GUI
 #======================
 oop = OOP()
+runT = Thread(thread=oop.methodInAThread())
 oop.win.mainloop()
