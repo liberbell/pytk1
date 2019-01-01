@@ -24,6 +24,7 @@ minY = min([y for yValues in yAll for y in yValues])
 
 yUpperLimit = 20
 
+maxY = max([y for yValues in yAll for y in yValues if y < yUpperLimit])
 # the commas after t0, t1 and t2 are required
 t0, = axis.plot(xValues, yValues0)
 t1, = axis.plot(xValues, yValues1)
