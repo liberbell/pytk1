@@ -13,7 +13,7 @@ axis  = fig.add_subplot(111)                  # 1 row, 1 column
 xValues  = [1,2,3,4]
 
 yValues0 = [6,7.5,8,7.5]
-yValues1 = [5.5,6.5,8,6]
+yValues1 = [5.5,6.5,50,6]
 yValues2 = [6.5,7,8,7]
 
 # the commas after t0, t1 and t2 are required
@@ -21,10 +21,10 @@ t0, = axis.plot(xValues, yValues0)
 t1, = axis.plot(xValues, yValues1)
 t2, = axis.plot(xValues, yValues2)
 
-t0, = axis.plot(xValues, yValues0, color = 'purple')  # change the color of the plotted line to purple
+# t0, = axis.plot(xValues, yValues0, color = 'purple')  # change the color of the plotted line to purple
 # t0, = axis.plot(xValues, yValues0, color = 'r')  # change the color of the plotted line
-t1, = axis.plot(xValues, yValues1, color = 'red')
-t2, = axis.plot(xValues, yValues2, color = 'blue')
+# t1, = axis.plot(xValues, yValues1, color = 'red')
+# t2, = axis.plot(xValues, yValues2, color = 'blue')
 
 axis.set_ylabel('Vertical Label')
 axis.set_xlabel('Horizontal Label')
