@@ -1,11 +1,3 @@
-'''
-Created on Jun 28, 2015
-Recipe:  B04829_04_01
-@author: Burkhard
-'''
-#======================
-# imports
-#======================
 import tkinter as tk
 from tkinter import ttk
 from tkinter import scrolledtext
