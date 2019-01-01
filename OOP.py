@@ -86,7 +86,7 @@ class OOP():
 
         ttk.Label(self.monty, text="Choose a number:").grid(column=1, row=0)
         number = tk.StringVar()
-        numberChosen = ttk.Combobox(self.monty, width=12, textvariable=number)
+        numberChosen = ttk.Combobox(self.monty, width=14, textvariable=number)
         numberChosen['values'] = (1, 2, 4, 42, 100)
         numberChosen.grid(column=1, row=1)
         numberChosen.current(0)
