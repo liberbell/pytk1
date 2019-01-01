@@ -96,7 +96,7 @@ class OOP():
         self.spin.grid(column=0, row=2)
 
         # Using a scrolled Text control
-        scrolW  = 30; scrolH  =  3
+        scrolW  = 40; scrolH  =  3
         self.scr = scrolledtext.ScrolledText(self.monty, width=scrolW, height=scrolH, wrap=tk.WORD)
         self.scr.grid(column=0, row=3, sticky='WE', columnspan=3)
 
