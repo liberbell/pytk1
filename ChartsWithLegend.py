@@ -16,7 +16,8 @@ yValues0 = [6,7.5,8,7.5]
 yValues1 = [5.5,6.5,50,6]
 yValues2 = [6.5,7,8,7]
 
-axis.set_ylim(5, 8)
+axis.set_xlim(0, 8)
+axis.set_ylim(0, 8)
 
 # the commas after t0, t1 and t2 are required
 t0, = axis.plot(xValues, yValues0)
