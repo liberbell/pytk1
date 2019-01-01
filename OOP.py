@@ -77,7 +77,7 @@ class OOP():
 
         # Adding a Textbox Entry widget
         self.name = tk.StringVar()
-        nameEntered = ttk.Entry(self.monty, width=12, textvariable=self.name)
+        nameEntered = ttk.Entry(self.monty, width=24, textvariable=self.name)
         nameEntered.grid(column=0, row=1, sticky='W')
 
         # Adding a Button
