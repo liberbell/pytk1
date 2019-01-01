@@ -20,6 +20,10 @@ yAll = [yValues0, yValues1, yValues2]
 # axis.set_xlim(0, 8)
 # axis.set_ylim(0, 8)
 
+minY = min([y for yValues in yAll for y in yValues])
+
+yUpperLimit = 20
+
 # the commas after t0, t1 and t2 are required
 t0, = axis.plot(xValues, yValues0)
 t1, = axis.plot(xValues, yValues1)
