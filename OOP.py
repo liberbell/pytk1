@@ -93,7 +93,7 @@ class OOP():
 
         # Adding a Spinbox widget using a set of values
         self.spin = Spinbox(self.monty, values=(1, 2, 4, 42, 100), width=5, bd=8, command=self._spin)
-        self.spin.grid(column=0, row=2)
+        self.spin.grid(column=0, row=2, sticky='W')
 
         # Using a scrolled Text control
         scrolW  = 40; scrolH  =  10
