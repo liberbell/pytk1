@@ -25,6 +25,7 @@ class OOP():
     def createThread(self):
         runT = Thread(target=self.methodInAThread)
         runT.start()
+        print(runT)
 
     # Button callback
     def clickMe(self):
@@ -61,11 +62,11 @@ class OOP():
         self.win.destroy()
         exit()
 
-    def methodInAThread(self):
+    def methodInAThread(self, numOfLoops=10):
         print('Hi, How are you.')
-        # for idx in range(10):
-        #     sleep(5)
-        #     self.scr.insert(tk.INSERT, str(idx) + '\n')
+        for idx in range(numOfLoops):
+            sleep(1)
+            self.scr.insert(tk.INSERT, str(idx) + '\n')
 
     def usingGlobal(self):
         GLOBAL_CONST = 777
