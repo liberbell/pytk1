@@ -65,7 +65,7 @@ class OOP():
         print('Hi, How are you.')
         for idx in range(10):
             sleep(5)
-            self.src.insert(tk.INSERT, str(idx), + '\n')
+            self.scr.insert(tk.INSERT, str(idx), + '\n')
 
     def usingGlobal(self):
         GLOBAL_CONST = 777
