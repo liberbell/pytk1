@@ -22,12 +22,17 @@ class OOP():
         self.win.title("Python GUI")
         self.createWidgets()
 
+    def createThread(self):
+        runT = Thread(target=self.methodInAThread)
+        runT.start()
+
     # Button callback
     def clickMe(self):
         self.action.configure(text='Hello ' + self.name.get())
-        for idx in range(10):
-            sleep(5)
-            self.scr.insert(tk.INSERT, str(idx), + '\n')
+        # for idx in range(10):
+        #     sleep(5)
+        #     self.scr.insert(tk.INSERT, str(idx), + '\n')
+        self.createThread()
 
     # Spinbox callback
     def _spin(self):
