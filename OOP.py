@@ -4,6 +4,7 @@ from tkinter import scrolledtext
 from tkinter import Menu
 from tkinter import Spinbox
 import OOP_ToolTip as tt
+import time
 
 from threading import Thread
 
