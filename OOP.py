@@ -24,6 +24,9 @@ class OOP():
     # Button callback
     def clickMe(self):
         self.action.configure(text='Hello ' + self.name.get())
+        for idx in range(10):
+            sleep(5)
+            self.scr.insert(tk.INSERT, str(idx), + '\n')
 
     # Spinbox callback
     def _spin(self):
