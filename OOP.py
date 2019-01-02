@@ -63,9 +63,9 @@ class OOP():
 
     def methodInAThread(self):
         print('Hi, How are you.')
-        for idx in range(10):
-            sleep(5)
-            self.scr.insert(tk.INSERT, str(idx) + '\n')
+        # for idx in range(10):
+        #     sleep(5)
+        #     self.scr.insert(tk.INSERT, str(idx) + '\n')
 
     def usingGlobal(self):
         GLOBAL_CONST = 777
