@@ -23,9 +23,10 @@ class OOP():
         self.createWidgets()
 
     def createThread(self):
-        runT = Thread(target=self.methodInAThread)
+        runT = Thread(target=self.methodInAThread, args=[8])
         runT.start()
         print(runT)
+        print('createThread():', self.runT.isAlive())
 
     # Button callback
     def clickMe(self):
