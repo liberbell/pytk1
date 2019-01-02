@@ -23,8 +23,8 @@ class OOP():
         self.createWidgets()
 
     def createThread(self):
-        runT = Thread(target=self.methodInAThread, args=[8])
-        runT.start()
+        self.runT = Thread(target=self.methodInAThread, args=[8])
+        self.runT.start()
         print(runT)
         print('createThread():', self.runT.isAlive())
 
@@ -68,6 +68,8 @@ class OOP():
         for idx in range(numOfLoops):
             sleep(1)
             self.scr.insert(tk.INSERT, str(idx) + '\n')
+        sleep(1)
+        print('methodInAThread():', self.runT.isAlive())
 
     def usingGlobal(self):
         GLOBAL_CONST = 777
