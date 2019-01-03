@@ -12,7 +12,7 @@ GLOBAL_CONST = 42
 
 #===================================================================
 class OOP():
-    runT = Thread(target=oop.methodInAThread())
+    # runT = Thread(target=oop.methodInAThread())
 
     def __init__(self):
         # Create instance
