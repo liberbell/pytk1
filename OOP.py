@@ -23,9 +23,9 @@ class OOP():
         self.createWidgets()
 
     def createThread(self):
-        runT = Thread(target=self.methodInAThread, args=[8])
-        runT.setDaemon(True)
-        runT.start()
+        self.runT = Thread(target=self.methodInAThread, args=[8])
+        self.runT.setDaemon(True)
+        self.runT.start()
         print(runT)
         print('createThread():', self.runT.isAlive())
 
