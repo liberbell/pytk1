@@ -5,6 +5,7 @@ from tkinter import Menu
 from tkinter import Spinbox
 import OOP_ToolTip as tt
 from time import sleep
+import queue
 
 from threading import Thread
 
@@ -32,7 +33,7 @@ class OOP():
         print('createThread():', self.runT.isAlive())
 
     def useQueue(self):
-        guiQueue = Queue()
+        guiQueue = queue.Queue()
         print(guiQueue)
 
     # Button callback
