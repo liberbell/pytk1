@@ -240,5 +240,7 @@ class OOP():
 # Start GUI
 #======================
 oop = OOP()
-runT = Thread(target=oop.methodInAThread())
+
+runT = Thread(target=oop.methodInAThread)
+
 oop.win.mainloop()
