@@ -31,6 +31,10 @@ class OOP():
         print(runT)
         print('createThread():', self.runT.isAlive())
 
+    def useQueue(self):
+        guiQueue = Queue()
+        print(guiQueue)
+
     # Button callback
     def clickMe(self):
         self.action.configure(text='Hello ' + self.name.get())
