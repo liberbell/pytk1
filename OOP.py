@@ -37,7 +37,7 @@ class OOP():
         print(guiQueue)
         for idx in range(10):
             guiQueue.put('Message from a queue' + str(idx))
-        guiQueue.put('Message from a queue')
+        # guiQueue.put('Message from a queue')
         print(guiQueue.get())
 
     # Button callback
