@@ -6,6 +6,7 @@ from tkinter import Spinbox
 import OOP_ToolTip as tt
 from time import sleep
 import queue
+import Queues as bq
 
 from threading import Thread
 
@@ -50,6 +51,8 @@ class OOP():
         #     sleep(5)
         #     self.scr.insert(tk.INSERT, str(idx), + '\n')
         self.createThread()
+        print(self)
+        bq.writeToScroll(self)
 
     # Spinbox callback
     def _spin(self):
