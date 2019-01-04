@@ -35,6 +35,8 @@ class OOP():
     def useQueue(self):
         guiQueue = queue.Queue()
         print(guiQueue)
+        guiQueue.put('Message from a queue')
+        print(guiQueue.get())
 
     # Button callback
     def clickMe(self):
