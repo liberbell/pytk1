@@ -6,6 +6,7 @@ from tkinter import Spinbox
 import OOP_ToolTip as tt
 from time import sleep
 import queue
+from queue import Queue
 import Queues as bq
 
 from threading import Thread
