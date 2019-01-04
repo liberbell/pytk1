@@ -36,14 +36,14 @@ class OOP():
         print('createThread():', self.runT.isAlive())
 
     def useQueue(self):
-        guiQueue = queue.Queue()
-        print(guiQueue)
-        for idx in range(10):
-            guiQueue.put('Message from a queue' + str(idx))
+        # guiQueue = queue.Queue()
+        # print(guiQueue)
+        # for idx in range(10):
+        #     guiQueue.put('Message from a queue' + str(idx))
         # guiQueue.put('Message from a queue')
         # print(guiQueue.get())
         while True:
-            print(guiQueue.get())
+            print(self.guiQueue.get())
 
     # Button callback
     def clickMe(self):
