@@ -38,7 +38,10 @@ class OOP():
         for idx in range(10):
             guiQueue.put('Message from a queue' + str(idx))
         # guiQueue.put('Message from a queue')
-        print(guiQueue.get())
+        # print(guiQueue.get())
+
+        while True:
+            print(guiQueue.get())
 
     # Button callback
     def clickMe(self):
