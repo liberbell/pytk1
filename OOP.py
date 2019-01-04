@@ -40,7 +40,6 @@ class OOP():
             guiQueue.put('Message from a queue' + str(idx))
         # guiQueue.put('Message from a queue')
         # print(guiQueue.get())
-
         while True:
             print(guiQueue.get())
 
