@@ -50,7 +50,7 @@ class OOP():
         # for idx in range(10):
         #     sleep(5)
         #     self.scr.insert(tk.INSERT, str(idx), + '\n')
-        self.createThread()
+        # self.createThread()
         print(self)
         bq.writeToScroll(self)
 
