@@ -35,6 +35,8 @@ class OOP():
     def useQueue(self):
         guiQueue = queue.Queue()
         print(guiQueue)
+        for idx in range(10):
+            guiQueue.put('Message from a queue' + str(idx))
         guiQueue.put('Message from a queue')
         print(guiQueue.get())
 
