@@ -20,6 +20,8 @@ class OOP():
         # Create instance
         self.win = tk.Tk()
 
+        self.guiQueue = Queue()
+
         tt.createToolTip(self.win, 'Hello GUI.')
 
         # Add a title
