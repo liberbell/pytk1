@@ -251,5 +251,5 @@ oop = OOP()
 
 runT = Thread(target=oop.methodInAThread)
 
-oop.useQueue()
+# oop.useQueue()
 oop.win.mainloop()
