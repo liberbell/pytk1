@@ -50,6 +50,9 @@ class OOP():
         while True:
             print(self.guiQueue.get())
 
+    def defaultFileEntries(self):
+        self.fileEntry.delete(0, tk.END)
+
     # Button callback
     def clickMe(self):
         self.action.configure(text='Hello ' + self.name.get())
