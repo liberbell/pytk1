@@ -201,6 +201,9 @@ class OOP():
         magFilesFrame = ttk.LabelFrame(tab2, text=' Manage Files: ')
         magFilesFrame.grid(column=0, row=1, sticky='WE', padx=10, pady=5)
 
+        def getFileName():
+            print('Hello from getFileName')
+            fDir = fd.askopenfilename(parent=self.win, initialdir=fDir)
 
         # Creating a Menu Bar
         menuBar = Menu(tab1)
