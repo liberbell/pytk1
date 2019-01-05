@@ -198,6 +198,9 @@ class OOP():
         for child in labelsFrame.winfo_children():
             child.grid_configure(padx=8)
 
+        magFilesFrame = ttk.LabelFrame(tab2, text=' Manage Files: ')
+        magFilesFrame.grid(column=0, row=1, sticky='WE', padx=10, pady=5)
+
 
         # Creating a Menu Bar
         menuBar = Menu(tab1)
