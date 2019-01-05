@@ -14,7 +14,8 @@ from tkinter import filedialog
 from os import path
 
 GLOBAL_CONST = 42
-
+fDir = path.dirname(__file__)
+netDir = fDir + '\\backup'
 #===================================================================
 class OOP():
     # runT = Thread(target=oop.methodInAThread())
@@ -30,6 +31,7 @@ class OOP():
         # Add a title
         self.win.title("Python GUI")
         self.createWidgets()
+        self.defaultFileEntries()
 
     def createThread(self):
         self.runT = Thread(target=self.methodInAThread, args=[8])
