@@ -122,6 +122,7 @@ class OOP():
         self.name = tk.StringVar()
         nameEntered = ttk.Entry(self.monty, width=24, textvariable=self.name)
         nameEntered.grid(column=0, row=1, sticky='W')
+        nameEntered.delete(0, tk.END)
 
         # Adding a Button
         self.action = ttk.Button(self.monty, text="Click Me!", command=self.clickMe)
