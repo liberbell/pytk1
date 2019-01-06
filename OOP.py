@@ -52,6 +52,15 @@ class OOP():
 
     def defaultFileEntries(self):
         self.fileEntry.delete(0, tk.END)
+        self.fileEntry.insert(0, fDir)
+        if len(fDir) > self.entryLen:
+            self.fileEntry.config(width=len(fDir) + 3)
+            self.fileEntry.config(state='readonly')
+
+        self.netwEntry.delete(0, tk.END)
+        self.netwEntry.insert(0, netwDir)
+        if len(netDir) > self.entryLen:
+            self.netwEntry.config(width=len(netDir) +3)
 
     # Button callback
     def clickMe(self):
