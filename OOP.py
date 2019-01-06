@@ -263,7 +263,7 @@ class OOP():
         self.usingGlobal()
 
         # Place cursor into name Entry
-        nameEntered.focus()
+        # nameEntered.focus()
 
         # Add a Tooltip to the Spinbox
         tt.createToolTip(self.spin, 'This is a Spin control.')
